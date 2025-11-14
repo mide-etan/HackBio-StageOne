@@ -5,14 +5,14 @@ def ham_dist(dna1, dna2):
     characters are different. It's often used in bioinformatics for DNA sequences,
     but works for any two strings of equal length.
     """
-    # Step 1: Check for equal length
+    # Check for equal length
     if len(dna1) != len(dna2):
         # A fundamental requirement for Hamming Distance is that the sequences 
         # must have the same length.
         print("Error: sequences must be of equal length.")
         return  # stops the function 
 
-    # Step 2: Initialize distance counter
+    # Initialize distance counter
     dist = 0
     # Iterate and compare characters
     for i in range(len(dna1)):
